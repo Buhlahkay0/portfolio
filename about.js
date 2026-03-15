@@ -24,11 +24,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  const diagLinkedin = makeLottie('lottie-linkedin', 'animations/diagonal-arrow.json');
-  const diagGithub   = makeLottie('lottie-github',   'animations/diagonal-arrow.json');
-  const diagResume   = makeLottie('lottie-resume',   'animations/diagonal-arrow.json');
-
-  addHover('link-linkedin', diagLinkedin);
-  addHover('link-github',   diagGithub);
-  addHover('link-resume',   diagResume);
+  const diagLinks = makeLottie('lottie-links', 'animations/diagonal-arrow.json');
+  addHover('about-links-area', diagLinks);
 });

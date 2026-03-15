@@ -56,13 +56,5 @@
 
 .about-links {
   display: flex;
-  gap: 3rem;
-  align-items: flex-start;
-}
-
-.about-link {
-  display: flex;
   flex-direction: column;
-  color: var(--defaultgray);
-  text-decoration: none;
 }
