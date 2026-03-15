@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Blake Gabriel — MixFlix</title>
+  <link rel="icon" type="image/png" href="images/beta-logo-32px.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="styles.css" rel="stylesheet">
+  <link href="mixflix.css" rel="stylesheet">
+</head>
+<body class="body">
+
+  <nav class="navbar">
+    <div class="padding">
+      <div class="div-block">
+        <div class="brand">
+          <div class="text-block-3">βlake</div>
+          <div class="text-block-3 g">Gabriel</div>
+        </div>
+        <div class="div-block-18">
+          <div class="nav-menu">
+            <a href="index.html" class="nav-link">Projects</a>
+            <a href="about.html" class="nav-link">About</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <div class="mf-hero">
+    <div class="text-block coming-soon">/ / Page Under Construction</div>
+    <div class="mf-heading">MixFlix</div>
+    <div class="mf-subheading">Film and Cinema App</div>
+  </div>
+
+  <!-- App Store Shots -->
+  <div class="mf-section">
+    <div class="mf-section-label">App Store Shots</div>
+    <div class="mf-screenshots">
+      <img src="images/App-Store-Screenshot-v2-1.png" alt="App Store Screenshot 1" class="store-shot">
+      <img src="images/App-Store-Screenshot-v2-2.png" alt="App Store Screenshot 2" class="store-shot">
+      <img src="images/App-Store-Screenshot-v2-3.png" alt="App Store Screenshot 3" class="store-shot">
+      <img src="images/App-Store-Screenshot-v2-4.png" alt="App Store Screenshot 4" class="store-shot">
+      <img src="images/App-Store-Screenshot-v2-5.png" alt="App Store Screenshot 5" class="store-shot">
+    </div>
+  </div>
+
+  <div class="mf-divider"></div>
+
+  <!-- What is MixFlix -->
+  <div class="mf-section">
+    <div class="mf-heading-2">What is MixFlix</div>
+    <div class="mf-body">
+      MixFlix is an iOS and Android app that I came up with to solve the age-old problem of spending hours scrolling Netflix attempting to decide on a movie to watch with a friend or date.
+    </div>
+  </div>
+
+  <div class="mf-divider"></div>
+
+  <!-- How I Built MixFlix -->
+  <div class="mf-section">
+    <div class="mf-heading-2">How I Built MixFlix</div>
+    <div class="mf-body">
+      MixFlix as a whole consists of 3 core components, the mobile app, the database, and the harvester
+    </div>
+
+    <div class="mf-subsection">
+      <div class="mf-subheading-2">Mobile App</div>
+      <div class="mf-body">
+        One of my passions is UI/UX and building this app gave me an incredible opportunity to explore what I could come up with. I used Figma to mockup my designs and ideas and used Gimp to create some of the assets used in the app.
+        <br><br>
+        The mobile app was built for both iOS and Android using Google's multi-platform framework, Flutter. After building a handful of apps with Flutter, I have nothing but good things to say about it. The development experience is like none other with tons of quality of life features and, most importantly, native compilation to iOS, Android, Web, Window, and MacOS.
+      </div>
+    </div>
+
+    <div class="mf-subsection">
+      <div class="mf-subheading-2">Database</div>
+      <div class="mf-body">
+        When building MixFlix, I realized that I would need some sort of backend to 1. Store all of the movie and tv show data and 2. Establish a connection between the two user's devices. My solution? Firebase Firestore. Although probably a little bit unconventional, I took advantage of Firebase's flexibility to create a method of communication between the two user's devices in addition to a database to store all of the data I mentioned.
+        <br><br>
+        My thoughts on Firebase are no different than Flutter. Using Firebase was an incredible experience with an actually fleshed out UI and intuitive controls. To this day the MixFlix database is going strong with no issues.
+      </div>
+    </div>
+
+    <div class="mf-subsection">
+      <div class="mf-subheading-2">Harvester</div>
+      <div class="mf-body">
+        So now that I had both the mobile app and the database, I needed a way to collect and store data on the movies and shows that I wanted to show the users of MixFlix. Now, one option I explored was taking advantage of the IMDb (Internet Movie Database) API to collect the most popular movies and shows and their respective data but I decided that my users wouldn't necessarily want to just be recommended classic titles. My thought was that users want to see what is popular now, what people are talking about, and shows that they probably haven't seen or heard of before.
+        <br><br>
+        My solution was to create what I called the Harvester. The Harvester is a program I wrote in Python to figure out what movies and shows were trending at the moment and collect all of the data from the respective API's and websites. While I can't say how the Harvester figures out the best shows and movies to collect, I can say that its basic functionality after finding a show that it thinks is worth adding to the database is to scrape the respective sites (ethically) and call all of the necessary API's to collect everything from the movie or show's release date to the poster art.
+        <br><br>
+        Upon release of the app, the Harvester will run once per day during which it will clear the database of all the shows and movies and then collect a new set of roughly 250 of the current most popular titles.
+      </div>
+    </div>
+  </div>
+
+  <div class="mf-spacer"></div>
+
+  <!-- Mobile cover -->
+  <div class="mobile-cover">
+    <div class="text-block-2">Mobile view under construction :(</div>
+  </div>
+
+</body>
+</html>

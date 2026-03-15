@@ -1,0 +1,407 @@
+:root {
+  --defaultgray: #333;
+  --lightgray: #a2a2a2;
+  --offwhite: #f8f8f8;
+  --textblack: #131313;
+  --offblack: #161616;
+  --white: white;
+  --black: black;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+.body {
+  background-color: #f8f8f8;
+}
+
+/* ── Navbar ── */
+.navbar {
+  z-index: 1;
+  background-color: transparent;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.padding {
+  width: 100%;
+  padding: 1rem 4rem;
+}
+
+.div-block {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+.brand {
+  flex: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.text-block-3 {
+  font-family: Montserrat, sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 20px;
+}
+
+.text-block-3.g {
+  padding-left: 10px;
+  line-height: 28px;
+}
+
+.div-block-18 {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-menu {
+  display: flex;
+  flex: 0 auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-link {
+  color: #a2a2a2;
+  font-family: Montserrat, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: none;
+  padding: 0 1rem;
+  transition: color 0.3s;
+}
+
+.nav-link:hover,
+.nav-link.current {
+  color: #333;
+}
+
+/* ── Splash / Hero ── */
+.splash {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+}
+
+.heading {
+  text-align: left;
+  padding-bottom: 4rem;
+  padding-left: 10rem;
+  padding-right: 10rem;
+  font-family: Montserrat, sans-serif;
+  font-size: 70px;
+  font-weight: 700;
+  line-height: 70px;
+}
+
+.text-span {
+  text-align: center;
+  width: 100%;
+  display: inline-block;
+}
+
+.div-block-not-3 {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  padding-bottom: 2rem;
+}
+
+.div-block-36,
+.div-block-37 {
+  width: 25%;
+}
+
+/* ── Buttons / Links ── */
+.link-block {
+  color: #333;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.link-block-2 {
+  color: var(--defaultgray);
+  text-decoration: none;
+}
+
+.text-block {
+  margin: 0;
+  font-family: Montserrat, sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 24px;
+  transition: color 0.3s;
+}
+
+.text-block:hover {
+  color: #a2a2a2;
+}
+
+.text-block.coming-soon {
+  color: var(--defaultgray);
+}
+
+.text-block.grayed-out-2 {
+  color: var(--lightgray);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+}
+
+.div-block-7 {
+  text-align: left;
+  display: flex;
+  align-items: center;
+}
+
+.view {
+  color: #333;
+  text-decoration: none;
+}
+
+.coming-soon {
+  text-align: left;
+  display: flex;
+  align-items: center;
+}
+
+/* ── Lottie containers ── */
+.lottie-animation {
+  width: 2rem;
+  height: 2rem;
+}
+
+.lottie-animation.main-button {
+  margin-bottom: 8px;
+  margin-left: -3px;
+}
+
+.lottie-animation-2 {
+  width: 2rem;
+  height: 2rem;
+  margin-left: 8px;
+}
+
+.lottie-animation-2.main-button {
+  margin-bottom: 8px;
+  margin-left: -3px;
+}
+
+.lottie-animation-3 {
+  width: 2rem;
+  height: 2rem;
+  margin-bottom: 8px;
+  margin-left: -3px;
+}
+
+/* ── Project sections ── */
+.content-1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  height: 100vh;
+  padding-top: 0;
+  padding-left: 10vw;
+  padding-right: 10vw;
+  position: relative;
+  overflow: hidden;
+}
+
+
+.content-2 {
+  /* alternating layout — image on left */
+}
+
+.div-block-6 {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-right: 6vw;
+  will-change: transform;
+}
+
+.div-block-6.text-2 {
+  padding-left: 6vw;
+  padding-right: 0;
+}
+
+.div-block-8 {
+  width: 50%;
+  max-width: 50vw;
+  max-height: 100vh;
+}
+
+.item-heading {
+  text-indent: -5px;
+  font-family: Montserrat, sans-serif;
+  font-size: 60px;
+  font-weight: 500;
+  line-height: 60px;
+}
+
+.item-subheading {
+  color: #a2a2a2;
+  font-family: Montserrat, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  display: block;
+}
+
+.item-body {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  font-family: Montserrat, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+}
+
+/* ── Project images ── */
+.mixflix-1 {
+  aspect-ratio: auto;
+  max-width: 50%;
+  max-height: 70%;
+  position: relative;
+  top: 15%;
+  left: 1%;
+}
+
+.mixflix-1.pos2 {
+  top: 10%;
+  left: 10%;
+}
+
+.image-6 {
+  max-width: 124%;
+  position: relative;
+  top: 22%;
+  left: -16%;
+}
+
+.image-7 {
+  max-width: 124%;
+  position: relative;
+  top: 21%;
+  left: -12%;
+}
+
+/* ── Footer ── */
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: auto;
+}
+
+.div-block-25 {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 2%;
+}
+
+.div-block-26 {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  height: 250px;
+  padding: 0 10vw 5%;
+}
+
+.div-block-27 {
+  flex: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 50%;
+}
+
+.div-block-30 {
+  display: flex;
+  align-items: flex-start;
+  width: 50%;
+}
+
+.div-block-33 {
+  display: flex;
+  flex-direction: row;
+  flex: 0 auto;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 50%;
+}
+
+.div-block-34 {
+  display: flex;
+  flex-direction: column;
+}
+
+.div-block-35 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+}
+
+.div-block-24 {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 10vw;
+  padding-right: 10vw;
+}
+
+.footer-text {
+  text-align: left;
+  flex: 0 auto;
+  width: 50%;
+  font-family: Montserrat, sans-serif;
+  font-size: 4rem;
+  font-weight: 500;
+  line-height: 4rem;
+}
+
+.footer-link {
+  color: var(--defaultgray);
+  text-decoration: none;
+}
+
+/* ── Mobile cover ── */
+.mobile-cover {
+  display: none;
+}
+
+@media screen and (max-width: 991px) {
+  .mobile-cover {
+    z-index: 10;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    inset: 0;
+  }
+
+  .text-block-2 {
+    font-family: Montserrat, sans-serif;
+    font-weight: 500;
+    display: flex;
+  }
+}
