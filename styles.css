@@ -429,12 +429,17 @@
   }
 
   .heading {
-    font-size: 36px;
-    line-height: 42px;
+    font-size: 34px;
+    line-height: 40px;
     padding-left: 1.5rem;
     padding-right: 1.5rem;
     padding-top: 2rem;
     padding-bottom: 2rem;
+  }
+
+  .text-span {
+    text-align: left;
+    margin-bottom: 24px;
   }
 
   .div-block-not-3 {
