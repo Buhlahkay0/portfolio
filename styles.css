@@ -386,22 +386,160 @@
   display: none;
 }
 
-@media screen and (max-width: 991px) {
-  .mobile-cover {
-    z-index: 10;
-    background-color: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    inset: 0;
+/* ── Tablet (max 1024px) ── */
+@media (max-width: 1024px) {
+  .padding {
+    padding: 1rem 2rem;
   }
 
-  .text-block-2 {
-    font-family: Montserrat, sans-serif;
-    font-weight: 500;
+  .heading {
+    font-size: 52px;
+    line-height: 56px;
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+
+  .item-heading {
+    font-size: 46px;
+    line-height: 48px;
+  }
+
+  .content-1 {
+    padding-left: 5vw;
+    padding-right: 5vw;
+  }
+
+  .footer-text {
+    font-size: 3rem;
+    line-height: 3.2rem;
+  }
+}
+
+/* ── Mobile (max 768px) ── */
+@media (max-width: 768px) {
+  /* Navbar */
+  .padding {
+    padding: 1rem 1.5rem;
+  }
+
+  /* Hero */
+  .splash {
+    height: auto;
+    min-height: 100vh;
+  }
+
+  .heading {
+    font-size: 36px;
+    line-height: 42px;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  .div-block-not-3 {
+    justify-content: flex-start;
+    padding-left: 1.5rem;
+    padding-bottom: 2.5rem;
+    gap: 2.5rem;
+  }
+
+  .div-block-36,
+  .div-block-37 {
+    width: auto;
+  }
+
+  /* Project sections */
+  .content-1 {
+    flex-direction: column;
+    height: auto;
+    min-height: 0;
+    padding: 3rem 1.5rem;
+    overflow: visible;
+  }
+
+  /* content-2 sections (image first in DOM) — reverse so text shows on top */
+  .content-1.content-2 {
+    flex-direction: column-reverse;
+  }
+
+  .div-block-6 {
+    padding-right: 0;
+    padding-bottom: 2rem;
+  }
+
+  .div-block-6.text-2 {
+    padding-left: 0;
+    padding-bottom: 2rem;
+  }
+
+  .div-block-8 {
+    width: 100%;
+    max-width: 100%;
+    max-height: none;
     display: flex;
+    justify-content: center;
+    padding-bottom: 1rem;
+  }
+
+  .item-heading {
+    font-size: 40px;
+    line-height: 42px;
+  }
+
+  .item-body {
+    font-size: 16px;
+    line-height: 26px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  /* Reset image offsets */
+  .mixflix-1 {
+    position: static;
+    max-width: 70%;
+    max-height: none;
+  }
+
+  .mixflix-1.pos2 {
+    display: none;
+  }
+
+  .image-6,
+  .image-7 {
+    position: static;
+    max-width: 90%;
+  }
+
+  /* Footer */
+  .div-block-26 {
+    flex-direction: column;
+    height: auto;
+    align-items: flex-start;
+    gap: 2rem;
+    padding: 2.5rem 1.5rem;
+  }
+
+  .div-block-27 {
+    width: 100%;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .div-block-33,
+  .div-block-30 {
+    width: 100%;
+  }
+
+  .div-block-24 {
+    flex-direction: column;
+    padding: 1rem 1.5rem 2.5rem;
+    gap: 0.25rem;
+  }
+
+  .footer-text {
+    font-size: 2rem;
+    line-height: 2.4rem;
+    width: 100%;
   }
 }

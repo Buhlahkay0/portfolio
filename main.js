@@ -42,13 +42,18 @@ document.addEventListener('DOMContentLoaded', () => {
   const sections = document.querySelectorAll('.content-1');
 
   function updateParallax() {
+    if (window.innerWidth <= 768) {
+      sections.forEach(section => {
+        const textEl = section.querySelector('.div-block-6');
+        if (textEl) textEl.style.transform = '';
+      });
+      return;
+    }
     sections.forEach(section => {
       const textEl = section.querySelector('.div-block-6');
       if (!textEl) return;
       const rect = section.getBoundingClientRect();
-      // How far the section has been scrolled past the top of the viewport
       const scrolledPast = -rect.top;
-      // Shift text an extra 25% of that distance upward
       textEl.style.transform = `translateY(${scrolledPast * -0.25}px)`;
     });
   }
